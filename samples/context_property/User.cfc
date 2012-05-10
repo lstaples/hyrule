@@ -7,26 +7,25 @@ component {
 	property numeric userId;
 
 	/**
-	 * @Required
 	 * @context userSetup
 	 */
-	property string firstname;
+	property string firstName;
 
 	/**
-	 * @min 3
+	 * @Required
+	 * @min 10
+	 * @isValid email
 	 * @context userSetup
+	 * @displayName last name
 	 */
 	property string lastname;
 
 	/**
-	* @max 3
 	* @context userSetup
 	*/
 	property string username;
 
 	/**
-	 * @Required true
-	 * @IsValid email
 	 * @context userSetup
 	 */
 	property string email;

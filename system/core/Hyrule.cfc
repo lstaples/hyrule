@@ -71,7 +71,7 @@ component accessors="true" {
 				properties[meta.properties[x].name] = meta.properties[x];
 			meta = structKeyExists(meta,"extends") ? meta.extends : {};
 		}
-		while(structKeyExists(meta,"properties"));
+		while(structKeyExists(meta,"properties"));;
 
 		for(var validationRule in arguments.ruleset.getValidationRules()){
 

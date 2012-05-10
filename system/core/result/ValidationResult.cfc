@@ -45,7 +45,6 @@ component accessors="true" {
 	 */
 	public void function addError(required String class,required String level,required Struct property,required String type){
 		var error = new ValidationError();
-						
 		error.setClass(arguments.class);
 		error.setLevel(arguments.level);
 		error.setProperty(arguments.property.name);

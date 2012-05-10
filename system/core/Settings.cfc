@@ -25,7 +25,7 @@
 	* "object" (stop all validation after one failure) 
 	* or "property" (keep validating other properties on the object but no longer validate the failed property)
 	*/
-	property name="stopOnFirstFail" default="property";
+	property name="stopOnFirstFail" default="none";
 
 
 	/**

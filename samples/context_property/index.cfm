@@ -8,12 +8,11 @@
 	<cfset user = new User()>
 	<cfset user.setPassword("myreallylongpassword")>
 	<cfset user.setConfirmPassword("abc")>
+	<cfset user.setLastName("fsd")>
 	
-	<cfset result = application.hyrule.validate(user,"passwordChange")>
+	<cfset result = application.hyrule.validate(user,"userSetup","","none")>
 	<cfdump var="#result.getErrors()#">
 	
-	<cfset result = application.hyrule.validate(user,"userSetup,passwordChange")>
-	<cfdump var="#result.getErrors()#">	
 
 </body>
 </html>
