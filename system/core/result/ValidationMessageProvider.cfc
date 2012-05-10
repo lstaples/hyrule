@@ -25,7 +25,7 @@ component accessors="true" {
 		var type = domain & '.' & property & '.' & constraint;	
 		for(i=1; i <= arrayLen(messages); ++i){
 			if(messages[i].type == type){
-				return messages[i].message;
+				return replaceTemplateText(messages[i].message,prop);
 			}
 		}
 		// isvalid(type) is a special case
